@@ -1,14 +1,3 @@
-# downloadr
-A Go executable to use a config and download file from given url based on some ignore criteria (when API does not exist &amp; HTTP status codes are not useable)
-
-
-This was created becuase I use  http://wttr.in to get the current weather as an image.
-This is then used to display weather in my conky. (My Conky config I shall upload later but it based on GreenAppleDesktop conky theme)
-However every now and then, they return an image which says API requests exceeded or Too many requests, which looks very bad in my conky :)
-So the Json config file can have sha512 hashes that should be ignored for that URL.
-
-The config file looks like this (at least for now) (a Json Array) :
-```json
 [
 	{
 		"url": "http://wttr.in/pune_0tqp0.png",
@@ -31,9 +20,3 @@ The config file looks like this (at least for now) (a Json Array) :
 		]
 	}
 ]
-```
-
-The Program can be run with -h -help to see the options.
-Latest version can be downloaded from the releases :)
-
-Suggesstions are welcome as Bug / Feature requests and PRs of course :)
